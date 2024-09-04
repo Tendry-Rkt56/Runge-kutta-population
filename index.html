@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation du Projet : Simulation de Croissance de Population</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+<body>
+
+<h1>Simulation de Croissance de Population avec Runge-Kutta</h1>
+
+<div class="project-description">
+    <p>Ce projet vise à modéliser l'évolution d'une population en utilisant un modèle de croissance simple avec l'algorithme de <strong>Runge-Kutta</strong>. L'objectif est de simuler l'évolution de la population sur plusieurs années, en prenant en compte les paramètres de reproduction et la capacité de charge.</p>
+    
+    <p>Les utilisateurs peuvent entrer différents paramètres via un formulaire pour personnaliser la simulation. Après soumission, les résultats s'affichent sous forme de tableau avec la population estimée pour chaque année.</p>
+
+    <div class="project-parameters">
+        <h2>Paramètres du formulaire</h2>
+        
+        <div class="parameter">
+            <span class="parameter-title">Population initiale (P0) :</span>
+            <p>Nombre de la population au début de la simulation. Ce paramètre représente la taille initiale de la population que vous souhaitez simuler. Par exemple, si la population initiale est de 100, cela signifie que vous démarrez avec 100 individus.</p>
+        </div>
+
+        <div class="parameter">
+            <span class="parameter-title">Taux de reproduction (r) :</span>
+            <p>Le taux de reproduction représente la capacité de la population à se reproduire. Un taux de 0,1 indique une croissance de 10% par unité de temps (année dans notre cas).</p>
+        </div>
+
+        <div class="parameter">
+            <span class="parameter-title">Capacité de charge (K) :</span>
+            <p>La capacité de charge est la taille maximale que la population peut atteindre dans un environnement donné. Elle limite la croissance lorsque la population s'en approche.</p>
+        </div>
+
+        <div class="parameter">
+            <span class="parameter-title">Fréquence de calcul (en années) :</span>
+            <p>
+                 indique à quelle fréquence la population sera recalculée dans le modèle de croissance.
+            </p>
+        </div>
+
+        <div class="parameter">
+            <span class="parameter-title">Durée de l'analyse :</span>
+            <p>C'est le nombre d'années sur lequel la simulation sera effectuée. La simulation affichera les résultats année par année, en suivant l'évolution de la population.</p>
+        </div>
+    </div>
+
+    <a href="other/kuttas.html" class="btn btn-primary">Continuer</a>
+    
+</div>
+
+<div class="footer">
+    &copy; 2024 Simulation de Population | Tous droits réservés.
+</div>
+
+</body>
+</html>
